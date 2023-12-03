@@ -43,3 +43,22 @@ All solutions are written in Python
   Probably not for a single AoC problem unless there's some continuation between days 
 
 </details>
+
+## Day 3 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  The problem was a little daunting at the start, but I felt like I was over-thinking a bit too much. \
+  Was thinking too much about bitmasking \(even though I had no idea how to implement it\) when I probably should've just stuck to first principles.\
+  That said, bitmasking is definitely on my reading list for the future
+  
+</details>
+<details>
+  <summary>Second star</summary>
+
+  Maybe this star is where using bitmasking would be a bit of a red herring however.\
+  Realized I couldn't reuse my solution to part 1 and had to almost completely rewrite my solution.\
+  At least I could reuse the part where I gathered each of the numbers, but I probably should've started from there in the first star instead of going straight to bitmasking and shit.\
+  Also I think writing an `isdigit` method for the `Gear` class to always return `False` instead of checking if `entry` is a string instead of a `Gear` is kinda funny
+
+</details>
