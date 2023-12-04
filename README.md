@@ -62,3 +62,20 @@ All solutions are written in Python
   Also I think writing an `isdigit` method for the `Gear` class to always return `False` instead of checking if `entry` is a string instead of a `Gear` is kinda funny
 
 </details>
+
+## Day 4 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Really easy, just another exercise in text parsing.\
+  `count_winners` could probably just use `filter` and `len` instead of a for loop and if check though
+  
+</details>
+<details>
+  <summary>Second star</summary>
+
+  Fun use of a queue! \
+  Basic idea is to use a queue to keep track of the number of duplicate cards there are. \
+  Might use this problem as an example problem when teaching queues!
+
+</details>
