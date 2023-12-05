@@ -76,6 +76,27 @@ All solutions are written in Python
 
   Fun use of a queue! \
   Basic idea is to use a queue to keep track of the number of duplicate cards there are. \
-  Might use this problem as an example problem when teaching queues!
+  Might use this problem as an example problem when teaching queues! \
+  UPDATE: After reading the reddit megathread, seems like using a queue was a bit overkill and you only need a list. Still, a fun problem to give to any newbie programmer!
 
+</details>
+
+
+## Day 5 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Supposed to be a pretty easy task but I kinda overcomplicated it a little in anticipation of what I thought the second star's problem would be.\
+  Turns out you can assume that each seed will always have a 1-to-1 mapping to the soil type, and soil to the fertilizer type etc. \
+  \(So my incorrect assumption was that the different ranges could overlap, meaning one seed could possibly map to two or more different soil types. Or if not for the first star, that would be the twist for the second star!\) \ 
+  What I did originally in `map_seed` was to originally convert the `input` seed into a list then repeatedly add a new output if the input was in the mapping range. \ 
+  Then once the seed was mapped to the final location number\(s\), I would take the smallest location number from the list! \
+  
+</details>
+<details>
+  <summary>Second star</summary>
+
+  Oh boy now this was rough. Not only was my earlier assumption not correct \(so I did all that extra complexity for nothing\), but my program was _super_ inefficient!\
+  For this solution I just used a brute force method and calculated the mapped location number for each seed one by one. Took about 6 hours to finish processing the input seeds with their giant ranges!\
+  I have an idea to use some sort of window so that it can map many seeds at once if they're all within the same mapping, but that'll be a task for another time.
 </details>
