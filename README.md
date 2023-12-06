@@ -81,7 +81,6 @@ All solutions are written in Python
 
 </details>
 
-
 ## Day 5 (Spoilers!)
 <details>
   <summary>First star</summary>
@@ -99,4 +98,20 @@ All solutions are written in Python
   Oh boy now this was rough. Not only was my earlier assumption not correct \(so I did all that extra complexity for nothing\), but my program was _super_ inefficient!\
   For this solution I just used a brute force method and calculated the mapped location number for each seed one by one. Took about 6 hours to finish processing the input seeds with their giant ranges!\
   I have an idea to use some sort of window so that it can map many seeds at once if they're all within the same mapping, but that'll be a task for another time.
+</details>
+
+## Day 6 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Was out the entire day today so thankfully today's puzzle was really simple that could be banged out very quickly.\
+  \(Though I did kinda cheat by looking at it while I was out, was a little tripped up at the start and thought I had to whip out the ol' accelerating displacement formula from physics class a long time ago!\)
+  
+</details>
+<details>
+  <summary>Second star</summary>
+
+  My heart did sink a bit when the answer didn't print instaneously and thought I had to finally do some optimizations.\
+  But thankfully Python is not _that_ slow and I got it after a couple seconds of waiting.\
+  The unoptimized brute force method lives another day!
 </details>
