@@ -22,8 +22,9 @@ def part_two(data):
     beating_distances = [t for t in range(1, race_duration) if t * (race_duration - t) > record_distance]
     print(len(beating_distances))
 
+
 def main():
-    data = read_text("day6_input.txt")
+    data = read_text("input.txt")
     part_one(data)
     part_two(data)
 
