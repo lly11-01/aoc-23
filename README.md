@@ -115,3 +115,22 @@ All solutions are written in Python
   But thankfully Python is not _that_ slow and I got it after a couple seconds of waiting.\
   The unoptimized brute force method lives another day!
 </details>
+
+## Day 7 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Thought I was being clever by converting each hand to a hexadecimal score but as I'm writing this I realized I could probably just use regular string comparisons instead.\
+  Tbf though in classic fashion I misread the question again, and thought it was like classic poker where the order of the cards do not matter.\
+  How my scoring would've worked in classic poker is that the hand with the _lowest_ score is the best hand, a five-of-a-kind would be a two digit hexadecimal number starting with a `1`, and the second digit is the score of the label \(i.e. an `A` has the smallest score of 1, a `K` the next smallest score of 2, all the way down to a `2` having the largest score of D\) \
+  Then four-of-a-kind would be a three-digit hexadecimal number starting with a `1`, the second digit is the score of the four-of-a-kind label and the third digit the score of the single label;\
+  a full house would be another three-digit hexadecimal number starting with a `2` instead, the second digit is the score of the three-of-a-kind label and the third digit the score of the pair label \
+  And so on with the next types.\
+  It would've been fun to implement this scoring system \(though it's not like this puzzle wasn't fun either, especially the second star!\)
+</details>
+<details>
+  <summary>Second star</summary>
+
+  Am kinda scared of greedy algorithms so I had to take some time to convince myself that a greedy algorithm will always give the right solution in this case.\
+  Luckily the 3-of-a-kind is ranked higher than a two pair here, would be a lot more interesting \(and maybe quite a bit more difficult!\) if it was the other way round
+</details>
