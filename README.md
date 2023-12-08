@@ -134,3 +134,21 @@ All solutions are written in Python
   Am kinda scared of greedy algorithms so I had to take some time to convince myself that a greedy algorithm will always give the right solution in this case.\
   Luckily the 3-of-a-kind is ranked higher than a two pair here, would be a lot more interesting \(and maybe quite a bit more difficult!\) if it was the other way round
 </details>
+
+## Day 8 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Pretty simple graph traversal, just traverse through the graph according to the sequence that was given until you reach node `ZZZ`. \
+  Nothing really much else to say
+</details>
+<details>
+  <summary>Second star</summary>
+
+  Now _this_ was me being an idiot for several hours.\
+  What I did for my original solution \(you can see it is commented out in the .py file\) was traverse the starting nodes simultaneously one step at a time and check whether all the nodes ended with a `Z`.\
+  Turns out, just like in day 5, that if you are doing things one step at a time your solution will be _hilariously_ slow.\
+  But I thought I had some free time today so I just left it alone and let it run.\
+  It wasn't until a couple hours later until I realized that I could just calculate the number of steps required for _each_ starting node to traverse to the end, then take the LCM of those to get the correct answer.\
+  Hours of time wasted which did lead me to facepalm quite a bit
+</details>
