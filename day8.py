@@ -63,10 +63,8 @@ def calculate_steps(graph, sequence, node):
 def part_two(data):
     sequence = data[0]
     graph = parse_graph(data[2:])
-    steps = []
     start_nodes = [x for x in graph if x[-1] == 'A']
-    for start_node in start_nodes:
-        steps.append(calculate_steps(graph, sequence, start_node))
+    steps = [calculate_steps(graph, sequence, node) for node in start_nodes]
     print(math.lcm(*steps))
 
 
