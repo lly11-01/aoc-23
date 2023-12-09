@@ -84,11 +84,11 @@ All solutions are written in Python
 ## Day 5 (Spoilers!)
 <details>
   <summary>First star</summary>
-
-  Supposed to be a pretty easy task but I kinda overcomplicated it a little in anticipation of what I thought the second star's problem would be.\
+  
+  Supposed to be a pretty easy task but I kinda overcomplicated it a little in anticipation of what I thought the second star's problem would be. \
   Turns out you can assume that each seed will always have a 1-to-1 mapping to the soil type, and soil to the fertilizer type etc. \
-  \(So my incorrect assumption was that the different ranges could overlap, meaning one seed could possibly map to two or more different soil types. Or if not for the first star, that would be the twist for the second star!\) \ 
-  What I did originally in `map_seed` was to originally convert the `input` seed into a list then repeatedly add a new output if the input was in the mapping range. \ 
+  \(My incorrect assumption was that the different ranges could overlap, meaning one seed could possibly map to two or more different soil types. Or if not for the first star, that would be the twist for the second star!\)\
+  What I did originally in `map_seed` was to originally convert the `input` seed into a list then repeatedly add a new output if the input was in the mapping range. \
   Then once the seed was mapped to the final location number\(s\), I would take the smallest location number from the list! \
   
 </details>
@@ -157,11 +157,12 @@ All solutions are written in Python
 <details>
   <summary>First star</summary>
 
-  Really easy but really fun!\
+  Really easy but really fun! \
   The only real trick \(if you really want to call it a trick\) is noticing that the next value in the original sequence is just the last values of each sequence summed together
 </details>
 <details>
   <summary>Second star</summary>
-  Similar to the first part, but instead of adding the last values of each sequence together, the idea is to subtract the first value in the last sequence from the first value in the second-last sequence, then subtract that from the first value in the third-last sequence, etc. \
+  
+  Similar to the first part, but instead of adding the last values of each sequence together, the idea is to subtract the first value in the last sequence from the first value in the second-last sequence, then subtract that from the first value in the third-last sequence, etc.\
   Which means the `accumulate` function really comes in handy!
 </details>
