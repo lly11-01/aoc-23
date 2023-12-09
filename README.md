@@ -152,3 +152,16 @@ All solutions are written in Python
   It wasn't until a couple hours later until I realized that I could just calculate the number of steps required for _each_ starting node to traverse to the end, then take the LCM of those to get the correct answer.\
   Hours of time wasted which did lead me to facepalm quite a bit
 </details>
+
+## Day 9 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Really easy but really fun!\
+  The only real trick \(if you really want to call it a trick\) is noticing that the next value in the original sequence is just the last values of each sequence summed together
+</details>
+<details>
+  <summary>Second star</summary>
+  Similar to the first part, but instead of adding the last values of each sequence together, the idea is to subtract the first value in the last sequence from the first value in the second-last sequence, then subtract that from the first value in the third-last sequence, etc. \
+  Which means the `accumulate` function really comes in handy!
+</details>
