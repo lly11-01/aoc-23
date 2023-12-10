@@ -166,3 +166,23 @@ All solutions are written in Python
   Similar to the first part, but instead of adding the last values of each sequence together, the idea is to subtract the first value in the last sequence from the first value in the second-last sequence, then subtract that from the first value in the third-last sequence, etc.\
   Which means the `accumulate` function really comes in handy!
 </details>
+
+
+## Day 10 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Graphs my mortal nemesis >:C \
+  Anyways this ended up being a relatively simple BFS to visit all the pipes that are in the loop and assign their distances from the start pipe.\
+  Tough part for me is just designing the graph itself, which is why my code looks _super_ atrocious \(Apologies for that! I hate graphs\)
+</details>
+<details>
+  <summary>Second star</summary>
+  
+  Now that I had the entire pipe loop from the first part, I got the idea to do a flood fill on the outskirts until it reached a pipe within the loop.\
+  That worked at removing _most_ of the points outside of the loop, but since "squeezing between pipes is also allowed", now I had to also remove those points that are fully enclosed with pipes but are still considered "outside the loop".\
+  Was kinda stuck at how to continue, so I cheated a little and decided to look at the reddit megathread for some ideas.\
+  Credit to [u/hi_im_new_to_this](https://www.reddit.com/r/adventofcode/comments/18evyu9/comment/kcqtow6/) for this fun fact, and with that I could figure out how to solve it! \
+  Just needed to iron out a few quirks like `L7` or `FJ` only counting as one wall instead of two \(because the two walls are technically at different heights and you would only cross one of those walls but not both\) \
+  Still not _super_ convinced that my solution is 100% correct and covers all the possible edge cases but hey iiwiw
+</details>
