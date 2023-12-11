@@ -167,7 +167,6 @@ All solutions are written in Python
   Which means the `accumulate` function really comes in handy!
 </details>
 
-
 ## Day 10 (Spoilers!)
 <details>
   <summary>First star</summary>
@@ -185,4 +184,19 @@ All solutions are written in Python
   Credit to [u/hi_im_new_to_this](https://www.reddit.com/r/adventofcode/comments/18evyu9/comment/kcqtow6/) for this fun fact, and with that I could figure out how to solve it! \
   Just needed to iron out a few quirks like `L7` or `FJ` only counting as one wall instead of two \(because the two walls are technically at different heights and you would only cross one of those walls but not both\) \
   Still not _super_ convinced that my solution is 100% correct and covers all the possible edge cases but hey iiwiw
+</details>
+
+## Day 11 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Was slightly concerned that my old nemesis would make a return, but thankfully it wasn't all that bad.\
+  Because of the grid like structure the shortest path between two galaxies is just the taxicab distance between them, which is really easy to calculate!\
+  The expanding space is an interesting spanner thrown in the works, but it wasn't that difficult to account for\
+</details>
+<details>
+  <summary>Second star</summary>
+  
+  Still not too bad, just instead of actually using more memory to make a bigger universe, you just need to keep track of the number of empty rows/columns between the two galaxies and add them to the distance.\
+  Was tripped up by the math quite a bit but after taking some time to draw stuff out, I got the solution out pretty easily
 </details>
