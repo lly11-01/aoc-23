@@ -192,7 +192,7 @@ All solutions are written in Python
 
   Was slightly concerned that my old nemesis would make a return, but thankfully it wasn't all that bad.\
   Because of the grid like structure the shortest path between two galaxies is just the taxicab distance between them, which is really easy to calculate!\
-  The expanding space is an interesting spanner thrown in the works, but it wasn't that difficult to account for\
+  The expanding space is an interesting spanner thrown in the works, but it wasn't that difficult to account for
 </details>
 <details>
   <summary>Second star</summary>
