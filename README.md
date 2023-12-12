@@ -200,3 +200,24 @@ All solutions are written in Python
   Still not too bad, just instead of actually using more memory to make a bigger universe, you just need to keep track of the number of empty rows/columns between the two galaxies and add them to the distance.\
   Was tripped up by the math quite a bit but after taking some time to draw stuff out, I got the solution out pretty easily
 </details>
+
+## Day 12 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Holy did today's problem kick my ass hard!\
+  Was stuck at how to begin so I did some light reading on the reddit megathread.\
+  Had an idea about counting the number of valid combinations with the `re` library but after reading a [StackOverflow post](https://stackoverflow.com/questions/1248519/how-can-i-expand-a-finite-pattern-into-all-its-possible-matches) that said it was basically impossible with it, I decided to just code it myself.\
+  And so that's how I got my original brute force solution.\
+  It already took a few seconds to finish running so I was really scared for part two...
+</details>
+<details>
+  <summary>Second star</summary>
+  
+  Dynamic processing my other mortal nemesis...\
+  Spent _way too long_ reading the reddit megathread for ideas, this solution was written on my own but I was inspired a little bit after having some quick glances at other people's solutions \(thank you to [pred](https://www.reddit.com/r/adventofcode/comments/18ge41g/comment/kd0dw9e/), [ai_prof](https://www.reddit.com/r/adventofcode/comments/18ge41g/comment/kd0oj1t/), and [simonlydell](https://www.reddit.com/r/adventofcode/comments/18ge41g/comment/kd0b6kq/) for uploading your solutions and everyone else on the megathread for ideas! <3\)\
+  The real epiphany came after realizing that, at a `#` character the next n-1 characters \(where n is the length of the next continuous group of broken springs\) **must** either be `#` or `?`, and then the subsequent character must be either a `.` or a `?`. Otherwise, it's not a possible combination.\
+  Once I wrangled out all the base cases, the recursive steps weren't too difficult to figure out \(all roads lead to [count_change](https://leetcode.com/problems/coin-change-ii/)!\) \
+  Finally just whack an @cache on the front \(god bless functools!\) and funnily enough part two finished much quicker than part one despite being five times longer! \
+  Overall a very doable problem _if_ you can look at the problem in the right perspective!
+</details>
