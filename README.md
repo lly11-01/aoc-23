@@ -221,3 +221,20 @@ All solutions are written in Python
   Finally just whack an @cache on the front \(god bless functools!\) and funnily enough part two finished much quicker than part one despite being five times longer! \
   Overall a very doable problem _if_ you can look at the problem in the right perspective!
 </details>
+
+## Day 13 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Not supposed to be too bad but was kinda tripped up when a pattern has multiple possible dividing lines. \
+  Originally I only checked if two consecutive rows/columns have the same values so there could be multiple of such instances and I was kinda confused about which line I should use. \
+  Went to the megathread to see if anyone knew how to resolve this to no avail, but I reread the problem statement and realized what I was missing.\
+  Kind of a stupid mistake but hey that's just par for the course for me
+</details>
+<details>
+  <summary>Second star</summary>
+  
+  Not too bad again, just added a case where there could be a pair of rows that is off by one and make sure there is only one such pair.\
+  I would say it doesn't scale well \(like what if there could be _two_ smudges? Or more?\) \
+  I think I could've done something with Hamming distances but since the problem specified only one smudge throughout I just went with this way out of laziness
+</details>
