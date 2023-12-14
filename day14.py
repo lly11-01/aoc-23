@@ -82,6 +82,7 @@ def part_two(data):
     index = (TIMES - 1 - offset) % loop_size
     final_rocks = past_cycles[index][1]
 
+    # Comment this line out to halve the runtime - just a sanity check after all the headaches!
     assert same(final_rocks, test(orig_data, offset + index + 1))
 
     print(sum(row.count('O') * weight for row, weight in zip(final_rocks, range(len(final_rocks), 0, -1))))
