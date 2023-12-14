@@ -238,3 +238,23 @@ All solutions are written in Python
   I would say it doesn't scale well \(like what if there could be _two_ smudges? Or more?\) \
   I think I could've done something with Hamming distances but since the problem specified only one smudge throughout I just went with this way out of laziness
 </details>
+
+## Day 14 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Might be the last day of regular attempts for me \(considering how the difficulty seems to be ramping up over time\) as I'll be more busy through the rest of December.\
+  Nonetheless, still gonna give it a shot every day but no promises on whether I'll finish it! \
+  Anyways onto today's problem, the shifting reminded me of the 2048 game that I coded before, so it wasn't too bad for me. \
+  \(Trick is to transpose the matrix of rocks and shift it row by row, it's easier than shifting by columns! \
+  Also helps for the next part it turns out\)
+</details>
+<details>
+  <summary>Second star</summary>
+  
+  The 1 billion spin cycles is there to deter people from brute forcing, but that won't stop me cause I can't read!\
+  But after realizing that it will take way too long I figured there would be some trick involved. \
+  Probably should've realized that there was some sort of cycle involved but I only read about it after looking through the megathread. \
+  Though determining which spin cycle was the same state as the billionth one somehow took me a long time to finally nail.\
+  Lots of off by one errors and different index systems it gave me so many headaches...
+</details>
