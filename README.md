@@ -258,3 +258,19 @@ All solutions are written in Python
   Though determining which spin cycle was the same state as the billionth one somehow took me a long time to finally nail.\
   Lots of off by one errors and different index systems it gave me so many headaches...
 </details>
+
+## Day 15 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  _Finally_ Eric threw us a bone after the day 12 incident! \
+  Really easy thanks to the `ord` function in Python, though there should be equivalents in other languages \(and if not I don't think it's too difficult to just hardcode the ASCII table\)
+</details>
+<details>
+  <summary>Second star</summary>
+  
+  Making a full blown `Lens` class is probably overkill but I really just wanted to override the `__eq__` method and use it somehow. \
+  Ya know, for fun! \
+  Resulting code is kinda clunky but that's where the fun lies! \
+  Also that final print statement brought out the inner golfer in me \(though the `if v` at the end is redundant but I added it for *fun*!\)
+</details>
