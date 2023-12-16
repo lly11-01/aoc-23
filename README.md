@@ -274,3 +274,22 @@ All solutions are written in Python
   Resulting code is kinda clunky but that's where the fun lies! \
   Also that final print statement brought out the inner golfer in me \(though the `if v` at the end is redundant but I added it for *fun*!\)
 </details>
+
+## Day 16 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  What was supposed to be a relatively simple problem kinda devolved into madness with my ineptitude in graphs.\
+  First I tried essentially a BFS but also removing beams that re-visited an already visited point, but that would end the search prematurely.\
+  Then I removed that requirement and checked if new points have been visited \(if not the search would end\), but that also ends the search prematurely.\
+  I had considered doing a DFS but it would result in an infinite loop and I had no idea what an appropriate terminating condition could be.\
+  It was only after reading the megathread \(god bless it!\) that I realized removing beams that re-visited an already visited point was the right idea, except that you had to check for re-visiting an already visited point _in the same direction_.\
+  In hindsight it seems so obvious, I really need to brush up on my DFS and cycles detecting...
+</details>
+<details>
+  <summary>Second star</summary>
+  
+  Yeah yeah yeah brute forcing is bad I know...\
+  But this time it took about 30-ish\(?\) minutes on my kinda crummy laptop \(I'm not at home right now where I'd usually be doing AoC\).\
+  So I don't think brute force is _that_ bad this time
+</details>
