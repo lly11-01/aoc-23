@@ -292,4 +292,5 @@ All solutions are written in Python
   Yeah yeah yeah brute forcing is bad I know...\
   But this time it took about 30-ish\(?\) minutes on my kinda crummy laptop \(I'm not at home right now where I'd usually be doing AoC\).\
   So I don't think brute force is _that_ bad this time
+  \(Update: ran it again and it took more like 8 minutes so looks like I _severely_ overestimated\)
 </details>
