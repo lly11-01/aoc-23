@@ -294,3 +294,26 @@ All solutions are written in Python
   So I don't think brute force is _that_ bad this time
   \(Update: ran it again and it took more like 8 minutes so looks like I _severely_ overestimated\)
 </details>
+
+## Day 17 (Spoilers!)
+TBD
+
+## Day 18 (Spoilers!)
+TBD
+
+## Day 19 (Spoilers!)
+<details>
+  <summary>First star</summary>
+
+  Catching up on the questions I missed and I decided to do this one as it \(finally\) wasn't about graphs! \
+  This problem wasn't too difficult, was more a matter of parsing. \
+  In classic fashion I think I over-engineered the `Workflow` and `Part` classes but it was fun! \
+  Although the one part where I used the `eval` function is kinda cursed
+</details>
+<details>
+  <summary>Second star</summary>
+  
+  Kinda Design Patterns pilled rn so was thinking of using prototypes. \
+  The idea is that you have a starting group with all the possible ranges, then for each condition in a workflow the group splits in two according to the condition. \
+  And yeah the splitting in two basically meant cloning the original group which is kinda what prototypes are right?
+</details>
